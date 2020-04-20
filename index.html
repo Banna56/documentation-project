@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<aside class="sidebar">
+				<div class="nav-container">
+					<header>
+						<h2>Python Tutorial</h2>
+					</header>
+				    <nav id="navbar">
+				        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+				        <li><a class="nav-link" href="#hello_world">Hello World!</a></li>
+				        <li><a href="#variable" class="nav-link">Variable</a></li>
+				        <li><a href="#data_types" class="nav-link">Data Types</a></li>
+				        <li><a href="#python_numbers" class="nav-link">Python Numbers</a></li>
+				        <li><a href="#python_string" class="nav-link">Python String</a></li>
+				        <li><a href="#dictionary" class="nav-link">Dictionary</a></li>
+				        <li><a href="#function" class="nav-link">Function</a></li>
+				        <li><a href="#loop" class="nav-link">Loops</a></li>
+				    </nav>
+				</div>
+	        </aside>
+	        <main id="main-doc">
+	            <section class="main-section" id="introduction">
+	                 <div class="section-container">
+	                 	<h3>Introduction</h3>
+	                 	<p>Python is a high-level, interpreted, interactive and object-oriented   scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages. 
+	                    </p>
+	                    <ul>
+	                    	<li><b>Python is Interpreted:</b>  Python is processed at runtime by the interpreter.</li>
+	                    	<li><b>Python is Interactive:</b> You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.</li>
+	                    	<li><b>Python is Object-Oriented:</b> Python supports Object-Oriented style or technique of programming that encapsulates code within objects.</li>
+	                    </ul>
+	                 	
+	                 </div>
+	            </section>
+			    <section class="main-section" id="hello_world">
+			    	<div class="section-container">
+	                 	<h3>Hello World!</h3>
+	                 	<p> Let us write a simple Python program in a script. Python files have extension .py.</p>
+						<p>	Type the following source code in a test.py file:</p>
+	                 	<code>
+	                 		print "Hello world!"
+	                 	</code>
+	                 	<p>You will see the result as like this:</p>
+	                 	<code>Hello world!</code>
+	                 </div>
+			    </section>
+	            <section class="main-section" id="variable">
+	            	<div class="section-container">
+	                 	<h3>Variable</h3>
+	                 	<p>Variables are nothing but reserved memory locations to store values. This means when you create a variable, you reserve some space in memory.
+	                 	</p>
+	                 	<p>Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals, or characters in these variables.</p>
+	                 	<p>Python variables do not need explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable. The equal sign (=) is used to assign values to variables.
+	                    The operand to the left of the = operator is the name</p>
+	                    <code class="syntex">
+	                    	counter = 100 # An integer assignment <br>
+							miles = 1000.0 # A floating point <br>
+							name = "John" # A string
+	                    </code>
+	                    <p>Accessing variables:</p>
+	                    <code class="syntex">
+	                    	print counter <br>
+	                    	print miles <br>
+	                    	print name
+	                    </code>
+	                    <p>Result:</p>
+	                    <code class="result"> 
+	                    	100 <br>
+							1000.0 <br>
+							John
+	                    </code>
+	                 </div>
+	            </section>
+				<section class="main-section" id="data_types">
+					<div class="section-container">
+	                 	<h3>Data Types</h3>
+	                 	<p>Python has various standard data types that are used to define the
+	operations possible on them and the storage method for each of them.</p>
+	                 	<p>Python has five standard data types:</p>
+	                 	<ul>
+	                 		<li>Numbers</li>
+	                 		<li>String</li>
+	                 		<li>List</li>
+	                 		<li>Tuple</li>
+	                 		<li>Dictionary</li>
+	                 	</ul>
+	             	</div>
+	            </section> 
+	            <section class="main-section" id="python_numbers">
+	            	<div class="section-container">
+	            		<h3>Python Numbers </h3>
+	                 	<p>Number data types store numeric values. Number objects are created when you assign a value to them. For example:</p>
+	                 	<code class="syntex">
+	                 		var1 = 1 <br>
+							var2 = 10
+	                 	</code>
+	                 	<p>Python supports four different numerical types:</p>
+	                 	<ul>
+	                 		<li>int (signed integers)</li>
+	                 		<li>long (long integers, they can also be represented in octal and hexadecimal)</li>
+	                 		<li>float (floating point real values)</li>
+	                 		<li>complex (complex numbers)</li>
+	                 	</ul>
+	            	</div>
+	            </section>
+	            <section class="main-section" id="python_string">
+	            	<div class="section-container">
+	            		<h3>Python String </h3>
+	                 	<p>Strings in Python are identified as a contiguous set of characters represented in the quotation marks. Python allows for either pairs of single or double quotes. Subsets of strings can be taken using the slice operator ([ ] and [:] ) with indexes starting at 0 in the beginning of the string and working their way from -1 at the end.</p>
+	                 	<p>The plus (+) sign is the string concatenation operator and the asterisk (*) is the
+	repetition operator. For example:</p>
+						<code class="syntex">
+							print str # Prints complete string <br>
+							print str[0] # Prints first character of the string <br>
+							print str[2:5] # Prints characters starting from 3rd to 5th <br>
+							print str[2:] # Prints string starting from 3rd character <br>
+							print str * 2 # Prints string two times <br>
+	                        print str + "TEST" # Prints concatenated string
+						</code>
+						<p>This will produce the following result:</p>
+						<code class="result">
+							Hello World! <br>
+							H <br>
+							llo <br>
+							llo World! <br>
+							Hello World!Hello World! <br>
+							Hello World!TEST
+						</code>
+	                 </div>
+				</section>
+			    <section class="main-section" id="dictionary">
+			    	<div class="section-container">
+	                 	<h3>Dictionary</h3>
+	                 	<p>Python's dictionaries are kind of hash table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can
+						be any arbitrary Python object.</p>
+	                 	<p>Dictionaries are enclosed by curly braces ({ }) and values can be assigned and accessed using square braces ([]). For example:</p>
+	                 	<code class="syntex">
+	                 		dict = {} <br>
+							dict['one'] = "This is one" <br>
+						    dict[2] = "This is two" <br>
+						    tinydict = {'name': 'john','code':6734, 'dept': 'sales'} <br>
+							print dict['one'] # Prints value for 'one' key <br>
+							print dict[2] # Prints value for 2 key <br>
+							print tinydict # Prints complete dictionary <br>
+							print tinydict.keys() # Prints all the keys <br>
+							print tinydict.values() # Prints all the values</code>
+	                 	<p>Result:</p>
+	                 	<code class="result">
+	                 		This is one <br>
+							This is two <br>
+							{'dept': 'sales', 'code': 6734, 'name': 'john'} <br>
+							['dept', 'code', 'name'] <br>
+							['sales', 6734, 'john']
+	                 	</code>
+	                 </div>
+			    </section>
+			    <section class="main-section" id="function">
+			    	<div class="section-container">
+	                 	<h3>Function</h3>
+	                 	<p>A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.</p>
+	                 	<p>As you already know, Python gives you many built-in functions such as print() and but you can also create your own functions. These functions are called user-defined functions.</p>
+	                 	<p><b>Defining a function</b></p><hr>
+	                 	<ul>
+	                 		<li>Function blocks begin with the keyword def followed by the function name and parentheses ( ( ) ).</li>
+	                 		<li>Any input parameters or arguments should be placed within these
+	parentheses. You can also define parameters inside these parentheses.</li>
+	                 		<li>The first statement of a function can be an optional statement - the documentation string of the function or docstring.</li>
+	                 		<li>The code block within every function starts with a colon (:) and is indented.</li>
+	                 		<li>The statement return [expression] exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as return None.</li>
+	                 	</ul>
+	                 	<p><b>Syntex:</b></p>
+	                 	<code class="syntex">
+	                 		def functionname( parameters ): <br>
+								"function_docstring" <br>
+								function_suite <br>
+								return [expression] <br>
+	                 	</code>
+						<p><b>Calling a function</b></p><hr>
+						<p>Defining a function only gives it a name, specifies the parameters that are to be included in the function and structures the blocks of code</p>
+						<p>Once the basic structure of a function is finalized, you can execute it by calling it from another function or directly from the Python prompt. Following is the example to call printme() function:
+						</p>
+						<code class="syntex">
+							def printme( str ): <br>
+								"This prints a passed string into this function" <br>
+								print str; <br>
+								return; <br>
+							# Now you can call printme function <br>
+							printme("I'm first call to user defined function!"); <br>
+							printme("Again second call to the same function");
+						</code>
+						<p>Results:</p>
+						<code class="result">
+							I'm first call to user defined function! <br>
+							Again second call to the same function
+						</code>
+	                 </div>
+			    </section>
+			    <section class="main-section" id="loop">
+			    	<div class="section-container">
+	                 	<h3>Loop</h3>
+	                 	<p>A loop statement allows us to execute a statement or group of statements multiple times. </p>
+	                 	<p>Python programming language provides following types of loops to handle looping requirements.</p>
+	                 	<ul>
+	                 		<li>while loop</li>
+	                 		<li>for loop</li>
+	                 		<li>nested loop</li>
+	                 	</ul>
+                        <table border="1">
+                        <tr>
+                          <th>Loop</th>
+                          <th>Description</th>
+                        </tr>
+                        <tr>
+                          <td>while loop</td>
+                          <td>Repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the loop body.</td>
+                        </tr>
+                        <tr>
+                          <td>for loop</td>
+                          <td>Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.</td>
+                        </tr>
+                        <tr>
+                          <td>nested loop</td>
+                          <td>You can use one or more loop inside any another while, for or do..while loop.</td>
+                        </tr>
+	                  	 </table>
+	                 </div>
+			         </section>		
+	         </main>
+       </div>
+	</body>
+</html>
